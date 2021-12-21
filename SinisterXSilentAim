@@ -1,5 +1,5 @@
 -- // Dependencies
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/SinisterXKnown/SinisterXsilentAim/main/README.md"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Universal/Aiming/Module.lua"))()
 Aiming.TeamCheck(false)
 
 -- // Services
@@ -18,7 +18,7 @@ local DaHoodSettings = {
     SilentAim = true,
 
     AimLock = false,
-    AimLockKeybind = false,
+    AimLockKeybind = Enum.KeyCode.E,
     BeizerLock = {
         Enabled = true,
         Smoothness = 0.05,
@@ -102,4 +102,3 @@ RunService:BindToRenderStep("AimLock", 0, function()
         end
     end
 end)
-
